@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-08T13:19:30.996804" rpa="false" schemaversion="5">
+<suite id="s1" name="Form Page" source="C:\Users\Jastin Raj Maharjan\PycharmProjects\Form Page\form_page.robot">
+<test id="s1-t1" name="Form Page" line="21">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:32.320434" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-08T13:19:32.318719" elapsed="9.174707"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-08T13:19:41.496729" elapsed="0.138733"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:41.667309" level="INFO">Typing text 'Justin' into text field '//*[@id="firstName"]'.</msg>
+<arg>${Locator_First_Name}</arg>
+<arg>Justin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:41.666429" elapsed="0.412960"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:42.081019" level="INFO">Typing text 'Maharjan' into text field '//*[@id="lastName"]'.</msg>
+<arg>${Locator_Last_Name}</arg>
+<arg>Maharjan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:42.080467" elapsed="0.645371"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:42.736791" level="INFO">Typing text 'jastin@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<arg>${Locator_Email}</arg>
+<arg>jastin@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:42.736226" elapsed="0.321225"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:43.058513" level="INFO">Clicking element '//*[@id="genterWrapper"]/div[2]/div[1]/label'.</msg>
+<arg>${Locator_Gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:43.057989" elapsed="0.177795"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:43.236942" level="INFO">Typing text '1234567890' into text field '//*[@id="userNumber"]'.</msg>
+<arg>${Locator_Number}</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:43.236373" elapsed="0.278796"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:43.517685" level="INFO">Clicking element '//*[@id="dateOfBirthInput"]'.</msg>
+<arg>${Locator_Dob}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:43.517092" elapsed="0.339530"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:43.860171" level="INFO">Selecting options from selection list '//select[@class='react-datepicker__month-select']' by label June.</msg>
+<arg>${Locator_Month_Select}</arg>
+<arg>June</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-08T13:19:43.859671" elapsed="0.351569"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:44.213431" level="INFO">Selecting options from selection list '//select[@class='react-datepicker__year-select']' by value 2002.</msg>
+<arg>${Locator_Year_Select}</arg>
+<arg>2002</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-05-08T13:19:44.212879" elapsed="0.196083"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:44.411509" level="INFO">Clicking element '//div[contains(@class,'react-datepicker__day') and text()='8']'.</msg>
+<arg>${Locator_Day_Select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:44.410945" elapsed="0.388962"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:44.803992" level="INFO">Clicking element '//*[@id="hobbiesWrapper"]/div[2]/div[1]/label'.</msg>
+<arg>${Locator_Hobby}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:44.803351" elapsed="0.170407"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T13:19:44.977781" level="INFO">Typing text 'Nepal, Kathmandu' into text field '//*[@id="currentAddress"]'.</msg>
+<arg>${Locator_Address}</arg>
+<arg>Nepal, Kathmandu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T13:19:44.977226" elapsed="0.182206"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-08T13:19:50.160833" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-08T13:19:45.160025" elapsed="5.001125"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-08T13:19:50.164332" elapsed="3.755399"/>
+</kw>
+<status status="PASS" start="2025-05-08T13:19:32.314381" elapsed="21.605986"/>
+</test>
+<status status="PASS" start="2025-05-08T13:19:31.000116" elapsed="22.921984"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Form Page" id="s1" pass="1" fail="0" skip="0">Form Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
