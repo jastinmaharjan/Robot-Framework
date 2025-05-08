@@ -17,9 +17,17 @@ ${Locator_Day_Select}       //div[contains(@class,'react-datepicker__day') and t
 ${Subject_Input}    id=subjectsInput
 ${Subject_Name}     English
 
-${Locator_Hobby}   //*[@id="hobbiesWrapper"]/div[2]/div[1]/label
+${Locator_Hobby}   //*[@id="hobbiesWrapper"]/div[2]/div[3]/label
 ${Locator_Address}   //*[@id="currentAddress"]
 
+${State_Dropdown}    //div[@id='state']
+${State_Option}      //div[contains(@id,'react-select-3-option-0')]
+
+${City_Dropdown}    //*[@id="city"]
+${City_Option}      //div[contains(@id,'react-select-4-option-0')]
+
+${Submit_buttom}    //*[@id="submit"]
+#${Close_button}     //*[@id="closeLargeModal"]
 
 *** Test Cases ***
 Form Page
@@ -36,12 +44,22 @@ Form Page
     Select From List By Value    ${Locator_Year_Select}     2002
     Click Element    ${Locator_Day_Select}
 
-   Click Element    ${Subject_Input}
+    Click Element    ${Subject_Input}
     Input Text    ${Subject_Input}    ${Subject_Name}
     Press Keys       ${Subject_Input}   RETURN
 
     Click Element    ${Locator_Hobby}
+
     Input Text    ${Locator_Address}    Nepal, Kathmandu
+
+    Click Element    ${State_Dropdown}
+    Click Element    ${State_Option}
+
+    Click Element    ${City_Dropdown}
+    Click Element    ${City_Option}
+
+    Click Button    ${Submit_buttom}
+#    Click Button    ${Close_button}
 
     Sleep    5
     Close Browser
