@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-08T17:09:45.120511" rpa="false" schemaversion="5">
+<suite id="s1" name="Login page" source="C:\Users\Jastin Raj Maharjan\PycharmProjects\Form Page\login page\Login_page.robot">
+<test id="s1-t1" name="Login Page" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-08T17:09:45.636241" level="INFO">Opening browser 'chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-08T17:09:45.635579" elapsed="3.729561"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-08T17:09:49.365675" elapsed="0.025066"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T17:09:49.392477" level="INFO">Typing text 'student' into text field '//*[@id="username"]'.</msg>
+<arg>${Username_field}</arg>
+<arg>student</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T17:09:49.391761" elapsed="0.143565"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T17:09:49.536217" level="INFO">Typing text 'Password123' into text field '//*[@id="password"]'.</msg>
+<arg>${Password_field}</arg>
+<arg>Password123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T17:09:49.535822" elapsed="0.111360"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-08T17:09:49.647826" level="INFO">Clicking button '//*[@id="submit"]'.</msg>
+<arg>${Submit_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T17:09:49.647552" elapsed="0.791401"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-08T17:09:53.439752" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-08T17:09:50.439341" elapsed="3.000552"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-08T17:09:53.440260" elapsed="2.346001"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:09:45.633781" elapsed="10.152871"/>
+</test>
+<status status="PASS" start="2025-05-08T17:09:45.122285" elapsed="10.665294"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login page" id="s1" pass="1" fail="0" skip="0">Login page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
