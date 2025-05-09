@@ -1,165 +1,260 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-08T16:39:08.954674" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-09T12:15:34.870590" rpa="false" schemaversion="5">
 <suite id="s1" name="Form Page" source="C:\Users\Jastin Raj Maharjan\PycharmProjects\Form Page\form_page.robot">
-<test id="s1-t1" name="Form Page" line="33">
+<test id="s1-t1" name="Form Page" line="37">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:10.577509" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<msg time="2025-05-09T12:15:35.207332" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-08T16:39:10.576745" elapsed="4.379324"/>
+<status status="PASS" start="2025-05-09T12:15:35.206998" elapsed="5.307424"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-08T16:39:14.969498" elapsed="24.835674"/>
+<status status="PASS" start="2025-05-09T12:15:40.514907" elapsed="0.037636"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:39.807364" level="INFO">Typing text 'Justin' into text field '//*[@id="firstName"]'.</msg>
+<msg time="2025-05-09T12:15:40.554437" level="INFO">Typing text 'Justin' into text field '//*[@id="firstName"]'.</msg>
 <arg>${Locator_First_Name}</arg>
 <arg>Justin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:39.805881" elapsed="1.778586"/>
+<status status="PASS" start="2025-05-09T12:15:40.553271" elapsed="0.149214"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:41.590558" level="INFO">Typing text 'Maharjan' into text field '//*[@id="lastName"]'.</msg>
+<msg time="2025-05-09T12:15:40.703122" level="INFO">Typing text 'Maharjan' into text field '//*[@id="lastName"]'.</msg>
 <arg>${Locator_Last_Name}</arg>
 <arg>Maharjan</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:41.590052" elapsed="0.383400"/>
+<status status="PASS" start="2025-05-09T12:15:40.702833" elapsed="0.103824"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:41.977894" level="INFO">Typing text 'jastin@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<msg time="2025-05-09T12:15:40.807295" level="INFO">Typing text 'jastin@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
 <arg>${Locator_Email}</arg>
 <arg>jastin@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:41.977331" elapsed="0.305003"/>
+<status status="PASS" start="2025-05-09T12:15:40.807017" elapsed="0.092734"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:42.289196" level="INFO">Clicking element '//*[@id="genterWrapper"]/div[2]/div[1]/label'.</msg>
+<msg time="2025-05-09T12:15:40.900420" level="INFO">Clicking element '//*[@id="genterWrapper"]/div[2]/div[1]/label'.</msg>
 <arg>${Locator_Gender}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:42.288670" elapsed="0.281775"/>
+<status status="PASS" start="2025-05-09T12:15:40.900143" elapsed="0.078764"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:42.572040" level="INFO">Typing text '1234567890' into text field '//*[@id="userNumber"]'.</msg>
+<msg time="2025-05-09T12:15:40.979543" level="INFO">Typing text '1234567890' into text field '//*[@id="userNumber"]'.</msg>
 <arg>${Locator_Number}</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:42.571493" elapsed="0.214966"/>
+<status status="PASS" start="2025-05-09T12:15:40.979264" elapsed="0.087474"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:42.789604" level="INFO">Clicking element '//*[@id="dateOfBirthInput"]'.</msg>
+<msg time="2025-05-09T12:15:41.067371" level="INFO">Clicking element '//*[@id="dateOfBirthInput"]'.</msg>
 <arg>${Locator_Dob}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:42.789171" elapsed="0.393397"/>
+<status status="PASS" start="2025-05-09T12:15:41.067093" elapsed="0.198958"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:43.206192" level="INFO">Selecting options from selection list '//select[@class='react-datepicker__month-select']' by label June.</msg>
+<msg time="2025-05-09T12:15:41.266924" level="INFO">Selecting options from selection list '//select[@class='react-datepicker__month-select']' by label June.</msg>
 <arg>${Locator_Month_Select}</arg>
 <arg>June</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-05-08T16:39:43.205670" elapsed="0.444623"/>
+<status status="PASS" start="2025-05-09T12:15:41.266485" elapsed="0.219136"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:43.725261" level="INFO">Selecting options from selection list '//select[@class='react-datepicker__year-select']' by value 2002.</msg>
+<msg time="2025-05-09T12:15:41.488760" level="INFO">Selecting options from selection list '//select[@class='react-datepicker__year-select']' by value 2002.</msg>
 <arg>${Locator_Year_Select}</arg>
 <arg>2002</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-05-08T16:39:43.723951" elapsed="0.520739"/>
+<status status="PASS" start="2025-05-09T12:15:41.487928" elapsed="0.078855"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:44.261394" level="INFO">Clicking element '//div[contains(@class,'react-datepicker__day') and text()='8']'.</msg>
+<msg time="2025-05-09T12:15:41.567439" level="INFO">Clicking element '//div[contains(@class,'react-datepicker__day') and text()='8']'.</msg>
 <arg>${Locator_Day_Select}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:44.260760" elapsed="0.590678"/>
+<status status="PASS" start="2025-05-09T12:15:41.567146" elapsed="0.094939"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:44.854789" level="INFO">Clicking element 'id=subjectsInput'.</msg>
+<msg time="2025-05-09T12:15:41.662891" level="INFO">Clicking element 'id=subjectsInput'.</msg>
 <arg>${Subject_Input}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:44.854288" elapsed="0.864305"/>
+<status status="PASS" start="2025-05-09T12:15:41.662617" elapsed="0.077277"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:45.724672" level="INFO">Typing text 'English' into text field 'id=subjectsInput'.</msg>
+<msg time="2025-05-09T12:15:41.740783" level="INFO">Typing text 'English' into text field 'id=subjectsInput'.</msg>
 <arg>${Subject_Input}</arg>
 <arg>${Subject_Name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:45.724138" elapsed="0.953641"/>
+<status status="PASS" start="2025-05-09T12:15:41.740327" elapsed="0.080910"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:46.682119" level="INFO">Sending key(s) ('RETURN',) to id=subjectsInput element.</msg>
-<msg time="2025-05-08T16:39:47.536646" level="INFO">Pressing special key RETURN to element.</msg>
-<msg time="2025-05-08T16:39:47.536840" level="INFO">Releasing special key RETURN.</msg>
+<msg time="2025-05-09T12:15:41.839433" level="INFO">Sending key(s) ('RETURN',) to id=subjectsInput element.</msg>
+<msg time="2025-05-09T12:15:42.210661" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-05-09T12:15:42.210778" level="INFO">Releasing special key RETURN.</msg>
 <arg>${Subject_Input}</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-05-08T16:39:46.681018" elapsed="0.955989"/>
+<status status="PASS" start="2025-05-09T12:15:41.838488" elapsed="0.404802"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:47.675286" level="INFO">Clicking element '//*[@id="hobbiesWrapper"]/div[2]/div[3]/label'.</msg>
+<msg time="2025-05-09T12:15:42.244170" level="INFO">Clicking element '//*[@id="hobbiesWrapper"]/div[2]/div[3]/label'.</msg>
+<msg time="2025-05-09T12:15:43.459956" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-09T12:15:43.460212" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="hobbies-checkbox-3" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (879, 163). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF701CECF25+75717]
+	GetHandleVerifier [0x00007FF701CECF80+75808]
+	(No symbol) [0x00007FF701AB8F9A]
+	(No symbol) [0x00007FF701B17439]
+	(No symbol) [0x00007FF701B14DF2]
+	(No symbol) [0x00007FF701B11EA1]
+	(No symbol) [0x00007FF701B10DA1]
+	(No symbol) [0x00007FF701B02394]
+	(No symbol) [0x00007FF701B3737A]
+	(No symbol) [0x00007FF701B01C46]
+	(No symbol) [0x00007FF701B37590]
+	(No symbol) [0x00007FF701B5F39C]
+	(No symbol) [0x00007FF701B37153]
+	(No symbol) [0x00007FF701B00421]
+	(No symbol) [0x00007FF701B011B3]
+	GetHandleVerifier [0x00007FF701FED6FD+3223453]
+	GetHandleVerifier [0x00007FF701FE7CA2+3200322]
+	GetHandleVerifier [0x00007FF702005AD3+3322739]
+	GetHandleVerifier [0x00007FF701D069FA+180890]
+	GetHandleVerifier [0x00007FF701D0E0FF+211359]
+	GetHandleVerifier [0x00007FF701CF5274+109332]
+	GetHandleVerifier [0x00007FF701CF5422+109762]
+	GetHandleVerifier [0x00007FF701CDBA39+4825]
+	BaseThreadInitThunk [0x00007FF8F0887374+20]
+	RtlUserThreadStart [0x00007FF8F1C3CC91+33]
+</msg>
 <arg>${Locator_Hobby}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:47.674786" elapsed="0.633710"/>
+<status status="FAIL" start="2025-05-09T12:15:42.243721" elapsed="1.325815">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="hobbies-checkbox-3" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (879, 163). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF701CECF25+75717]
+	GetHandleVerifier [0x00007FF701CECF80+75808]
+	(No symbol) [0x00007FF701AB8F9A]
+	(No symbol) [0x00007FF701B17439]
+	(No symbol) [0x00007FF701B14DF2]
+	(No symbol) [0x00007FF701B11EA1]
+	(No symbol) [0x00007FF701B10DA1]
+	(No symbol) [0x00007FF701B02394]
+	(No symbol) [0x00007FF701B3737A]
+	(No symbol) [0x00007FF701B01C46]
+	(No symbol) [0x00007FF701B37590]
+	(No symbol) [0x00007FF701B5F39C]
+	(No symbol) [0x00007FF701B37153]
+	(No symbol) [0x00007FF701B00421]
+	(No symbol) [0x00007FF701B011B3]
+	GetHandleVerifier [0x00007FF701FED6FD+3223453]
+	GetHandleVerifier [0x00007FF701FE7CA2+3200322]
+	GetHandleVerifier [0x00007FF702005AD3+3322739]
+	GetHandleVerifier [0x00007FF701D069FA+180890]
+	GetHandleVerifier [0x00007FF701D0E0FF+211359]
+	GetHandleVerifier [0x00007FF701CF5274+109332]
+	GetHandleVerifier [0x00007FF701CF5422+109762]
+	GetHandleVerifier [0x00007FF701CDBA39+4825]
+	BaseThreadInitThunk [0x00007FF8F0887374+20]
+	RtlUserThreadStart [0x00007FF8F1C3CC91+33]
+</status>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<arg>${Upload_Picture}</arg>
+<arg>${Picture_Path}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-09T12:15:43.570110" elapsed="0.000055"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:48.309634" level="INFO">Typing text 'Nepal, Kathmandu' into text field '//*[@id="currentAddress"]'.</msg>
 <arg>${Locator_Address}</arg>
 <arg>Nepal, Kathmandu</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:48.309123" elapsed="1.138527"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.570394" elapsed="0.000043"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:49.455990" level="INFO">Clicking element '//div[@id='state']'.</msg>
 <arg>${State_Dropdown}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:49.455472" elapsed="0.479107"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.570882" elapsed="0.000060"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:49.940022" level="INFO">Clicking element '//div[contains(@id,'react-select-3-option-0')]'.</msg>
 <arg>${State_Option}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:49.939510" elapsed="0.541949"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.571166" elapsed="0.000042"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:50.490474" level="INFO">Clicking element '//*[@id="city"]'.</msg>
 <arg>${City_Dropdown}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:50.489951" elapsed="0.436249"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.571424" elapsed="0.000040"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:50.958665" level="INFO">Clicking element '//div[contains(@id,'react-select-4-option-0')]'.</msg>
 <arg>${City_Option}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:50.958151" elapsed="0.261630"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.571698" elapsed="0.000044"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-08T16:39:51.226865" level="INFO">Clicking button '//*[@id="submit"]'.</msg>
 <arg>${Submit_buttom}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-08T16:39:51.226396" elapsed="0.769109"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.571939" elapsed="0.000041"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-08T16:39:57.014156" level="INFO">Slept 5 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-09T12:15:43.572193" elapsed="0.000041"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${Close_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-05-09T12:15:43.572436" elapsed="0.000040"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-08T16:39:52.013586" elapsed="5.001031"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.572681" elapsed="0.000046"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-08T16:39:57.015180" elapsed="5.688578"/>
+<status status="NOT RUN" start="2025-05-09T12:15:43.573127" elapsed="0.000042"/>
 </kw>
-<status status="PASS" start="2025-05-08T16:39:10.573275" elapsed="52.131014"/>
+<status status="FAIL" start="2025-05-09T12:15:35.205765" elapsed="8.367729">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="hobbies-checkbox-3" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (879, 163). Other element would receive the click: &lt;td&gt;...&lt;/td&gt;
+  (Session info: chrome=136.0.7103.93)
+Stacktrace:
+	GetHandleVerifier [0x00007FF701CECF25+75717]
+	GetHandleVerifier [0x00007FF701CECF80+75808]
+	(No symbol) [0x00007FF701AB8F9A]
+	(No symbol) [0x00007FF701B17439]
+	(No symbol) [0x00007FF701B14DF2]
+	(No symbol) [0x00007FF701B11EA1]
+	(No symbol) [0x00007FF701B10DA1]
+	(No symbol) [0x00007FF701B02394]
+	(No symbol) [0x00007FF701B3737A]
+	(No symbol) [0x00007FF701B01C46]
+	(No symbol) [0x00007FF701B37590]
+	(No symbol) [0x00007FF701B5F39C]
+	(No symbol) [0x00007FF701B37153]
+	(No symbol) [0x00007FF701B00421]
+	(No symbol) [0x00007FF701B011B3]
+	GetHandleVerifier [0x00007FF701FED6FD+3223453]
+	GetHandleVerifier [0x00007FF701FE7CA2+3200322]
+	GetHandleVerifier [0x00007FF702005AD3+3322739]
+	GetHandleVerifier [0x00007FF701D069FA+180890]
+	GetHandleVerifier [0x00007FF701D0E0FF+211359]
+	GetHandleVerifier [0x00007FF701CF5274+109332]
+	GetHandleVerifier [0x00007FF701CF5422+109762]
+	GetHandleVerifier [0x00007FF701CDBA39+4825]
+	BaseThreadInitThunk [0x00007FF8F0887374+20]
+	RtlUserThreadStart [0x00007FF8F1C3CC91+33]
+</status>
 </test>
-<status status="PASS" start="2025-05-08T16:39:08.959467" elapsed="53.746040"/>
+<status status="FAIL" start="2025-05-09T12:15:34.872423" elapsed="8.702605"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Form Page" id="s1" pass="1" fail="0" skip="0">Form Page</stat>
+<stat name="Form Page" id="s1" pass="0" fail="1" skip="0">Form Page</stat>
 </suite>
 </statistics>
 <errors>

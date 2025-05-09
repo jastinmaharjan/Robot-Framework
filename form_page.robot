@@ -18,6 +18,10 @@ ${Subject_Input}    id=subjectsInput
 ${Subject_Name}     English
 
 ${Locator_Hobby}   //*[@id="hobbiesWrapper"]/div[2]/div[3]/label
+
+${Picture_Path}     C:/Users/Jastin Raj Maharjan/Downloads/Northern Lights.jpg
+${Upload_Picture}   //*[@id="uploadPicture"]
+
 ${Locator_Address}   //*[@id="currentAddress"]
 
 ${State_Dropdown}    //div[@id='state']
@@ -27,7 +31,7 @@ ${City_Dropdown}    //*[@id="city"]
 ${City_Option}      //div[contains(@id,'react-select-4-option-0')]
 
 ${Submit_buttom}    //*[@id="submit"]
-#${Close_button}     //*[@id="closeLargeModal"]
+${Close_button}     //*[@id="closeLargeModal"]
 
 *** Test Cases ***
 Form Page
@@ -49,6 +53,8 @@ Form Page
     Press Keys       ${Subject_Input}   RETURN
 
     Click Element    ${Locator_Hobby}
+    
+    Choose File    ${Upload_Picture}    ${Picture_Path}
 
     Input Text    ${Locator_Address}    Nepal, Kathmandu
 
@@ -59,7 +65,8 @@ Form Page
     Click Element    ${City_Option}
 
     Click Button    ${Submit_buttom}
-#    Click Button    ${Close_button}
+    Sleep    3
+    Click Button    ${Close_button}
 
     Sleep    5
     Close Browser
